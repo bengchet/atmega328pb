@@ -65,7 +65,6 @@ python ../../merge_packages.py $new_json $srcdir/package_cytron_m328pb_index_sta
 echo -n $M328PB_DEPLOY_KEY > ~/.ssh/m328pb_deploy_b64
 base64 --decode --ignore-garbage ~/.ssh/m328pb_deploy_b64 > ~/.ssh/m328pb_deploy
 chmod 600 ~/.ssh/m328pb_deploy
-cat ~/.ssh/m328pb_deploy
 echo -e "Host atmega328pb-board-package\n\tHostname github.com\n\tUser git\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/m328pb_deploy" >> ~/.ssh/config
 
 #git clone the same repo git
