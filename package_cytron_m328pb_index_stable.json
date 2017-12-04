@@ -15,7 +15,7 @@
           "help": {
             "online": ""
           }, 
-          "version": "", 
+          "version": "1.0.0", 
           "architecture": "avr", 
           "archiveFileName": "", 
           "boards": [
