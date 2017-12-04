@@ -9,12 +9,10 @@ script:
 - ver=`git describe --tags --always`
 - cd package
 - "./build_boards_manager_package.sh"
-- cd ../
-#- git add package_cytron_m328pb_index_stable.json
-- git add hello.txt
-#- git commit -m "Atmega328PB version $ver release"
-- git commit -m "send hello world test"
-- git push origin master
+- cd ~/tmp
+- git add package_cytron_m328pb_index_stable.json
+- git commit -m "Atmega328PB version $ver release"
+
 notifications:
   email:
     recipients:
@@ -32,4 +30,5 @@ deploy:
     repo: CytronTechnologies/atmega328pb-board-package
     tags: true
 after_deploy:
+- cd ~/tmp
 - git push origin master

@@ -68,9 +68,10 @@ chmod 600 ~/.ssh/m328pb_deploy
 cat ~/.ssh/m328pb_deploy
 echo -e "Host atmega328pb-board-package\n\tHostname github.com\n\tUser git\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/m328pb_deploy" >> ~/.ssh/config
 
-cp $new_json ../../../package_cytron_m328pb_index_stable.json
+#git clone the same repo git
+git clone git@github.com:CytronTechnologies/atmega328pb-board-package.git ~/tmp
 
-echo "Hello world Testing..." > ../../../hello.txt
+cp $new_json ~/tmp/package_cytron_m328pb_index_stable.json
 
 popd
 popd
