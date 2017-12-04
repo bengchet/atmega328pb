@@ -3,9 +3,9 @@
     {
       "maintainer": "Cytron Technologies", 
       "help": {
-        "online": "http://forum.cytron.com.my/"
+        "online": "http://forum.cytron.io/"
       }, 
-      "websiteURL": "http://www.cytron.com.my", 
+      "websiteURL": "http://www.cytron.io", 
       "platforms": [
         {
           "category": "Contributed", 
@@ -13,7 +13,7 @@
           "url": "https://github.com/CytronTechnologies/atmega328pb-board-package/releases/download/1.0.0/atmega328pb-1.0.0.zip", 
           "checksum": "SHA-256:0e81729f06eb4b9566e26a30e6ca36785be8b7234924af5b14372b22d141ec61", 
           "help": {
-            "online": "http://forum.cytron.com.my/"
+            "online": "http://forum.cytron.io/"
           }, 
           "version": "1.0.0", 
           "architecture": "avr", 
@@ -39,7 +39,7 @@
         }
       ], 
       "tools": [], 
-      "email": "support@cytron.com.my", 
+      "email": "support@cytron.io", 
       "name": "cytron"
     }
   ]

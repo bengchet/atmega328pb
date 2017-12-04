@@ -8,7 +8,7 @@ echo "Version: $ver"
 echo "Package name: $package_name"
 
 PKG_URL=https://github.com/CytronTechnologies/atmega328pb-board-package/releases/download/$ver/$package_name.zip
-DOC_URL=http://forum.cytron.com.my/
+DOC_URL=http://forum.cytron.io/
 
 pushd ..
 

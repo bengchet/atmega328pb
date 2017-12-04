@@ -3,10 +3,10 @@
     {
       "name": "cytron",
       "maintainer": "Cytron Technologies",
-      "websiteURL": "http://www.cytron.com.my",
-      "email": "support@cytron.com.my",
+      "websiteURL": "http://www.cytron.io",
+      "email": "support@cytron.io",
       "help": {
-        "online": "http://forum.cytron.com.my/"
+        "online": "http://forum.cytron.io/"
       },
       "platforms": [
         {
