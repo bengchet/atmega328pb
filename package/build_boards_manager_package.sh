@@ -20,7 +20,7 @@ mkdir -p $outdir
 
 # Some files should be excluded from the package
 cat << EOF > exclude.txt
-package_cytron_m328pb_index_stable.json
+package_cytron_m328pb_index.json
 .git
 .gitignore
 .travis.yml
@@ -59,7 +59,7 @@ cat tmp > $new_json
 
 # merge current json with latest json
 set +e
-python ../../merge_packages.py $new_json $srcdir/package_cytron_m328pb_index_stable.json >tmp && mv tmp $new_json
+python ../../merge_packages.py $new_json $srcdir/package_cytron_m328pb_index.json >tmp && mv tmp $new_json
 
 # prepare to commit latest stable index.json in this repo
 echo -n $M328PB_DEPLOY_KEY > ~/.ssh/m328pb_deploy_b64
@@ -70,7 +70,7 @@ echo -e "Host $DEPLOY_HOST_NAME\n\tHostname github.com\n\tUser $DEPLOY_USER_NAME
 #git clone the same repo git
 git clone $DEPLOY_USER_NAME@$DEPLOY_HOST_NAME:CytronTechnologies/atmega328pb-board-package.git ~/tmp
 
-cp $new_json ~/tmp/package_cytron_m328pb_index_stable.json
+cp $new_json ~/tmp/package_cytron_m328pb_index.json
 
 popd
 popd
