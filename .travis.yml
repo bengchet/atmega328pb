@@ -10,7 +10,7 @@ script:
 - cd package
 - "./build_boards_manager_package.sh"
 - cd ~/tmp
-- git add package_cytron_m328pb_index_stable.json
+- git add package_cytron_m328pb_index.json
 - git commit -m "Atmega328PB version $ver release"
 
 notifications:
