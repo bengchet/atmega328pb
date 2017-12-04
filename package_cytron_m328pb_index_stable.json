@@ -10,14 +10,14 @@
         {
           "category": "Contributed", 
           "name": "Atmega328PB", 
-          "url": "", 
-          "checksum": "", 
+          "url": "https://github.com/CytronTechnologies/atmega328pb-board-package/releases/download/1.0.0/atmega328pb-1.0.0.zip", 
+          "checksum": "SHA-256:0e81729f06eb4b9566e26a30e6ca36785be8b7234924af5b14372b22d141ec61", 
           "help": {
-            "online": ""
+            "online": "http://forum.cytron.com.my/"
           }, 
           "version": "1.0.0", 
           "architecture": "avr", 
-          "archiveFileName": "", 
+          "archiveFileName": "atmega328pb-1.0.0.zip", 
           "boards": [
             {
               "name": "General Atmega328PB board"
@@ -35,7 +35,7 @@
               "name": "avrdude"
             }
           ], 
-          "size": ""
+          "size": "252306"
         }
       ], 
       "tools": [], 
