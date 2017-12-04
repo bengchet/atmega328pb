@@ -70,7 +70,7 @@ echo -e "Host atmega328pb-board-package\n\tHostname github.com\n\tUser git\n\tSt
 
 cp $new_json ../../../package_cytron_m328pb_index_stable.json
 
-echo "Hello world" > ../../../hello.txt
+echo "Hello world Testing..." > ../../../hello.txt
 
 popd
 popd
