@@ -59,9 +59,7 @@ cat tmp > $new_json
 
 # merge current json with latest json
 set +e
-if [ "$ver" != 1.0.0 ];then
 python ../../merge_packages.py $new_json $srcdir/package_cytron_m328pb_index_stable.json >tmp && mv tmp $new_json
-fi
 
 # prepare to commit latest stable index.json in this repo
 echo -n $M328PB_DEPLOY_KEY > ~/.ssh/m328pb_deploy_b64
@@ -69,7 +67,9 @@ base64 --decode --ignore-garbage ~/.ssh/m328pb_deploy_b64 > ~/.ssh/m328pb_deploy
 chmod 600 ~/.ssh/m328pb_deploy
 echo -e "Host atmega328pb-board-package\n\tHostname github.com\n\tUser git\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/m328pb_deploy" >> ~/.ssh/config
 
-cp $new_json ../../../package_cytron_m328pb_index_stable.json
+#cp $new_json ../../../package_cytron_m328pb_index_stable.json
+
+echo "Hello world test" > ../../../hello.txt
 
 popd
 popd
