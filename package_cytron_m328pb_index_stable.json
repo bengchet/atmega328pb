@@ -1,0 +1,46 @@
+{
+  "packages": [
+    {
+      "maintainer": "Cytron Technologies", 
+      "help": {
+        "online": "http://forum.cytron.com.my/"
+      }, 
+      "websiteURL": "http://www.cytron.com.my", 
+      "platforms": [
+        {
+          "category": "Contributed", 
+          "name": "Atmega328PB", 
+          "url": "", 
+          "checksum": "", 
+          "help": {
+            "online": ""
+          }, 
+          "version": "", 
+          "architecture": "avr", 
+          "archiveFileName": "", 
+          "boards": [
+            {
+              "name": "General Atmega328PB board"
+            }
+          ], 
+          "toolsDependencies": [
+            {
+              "packager": "arduino", 
+              "version": "4.9.2-atmel3.5.3-arduino2", 
+              "name": "avr-gcc"
+            }, 
+            {
+              "packager": "arduino", 
+              "version": "6.3.0-arduino2", 
+              "name": "avrdude"
+            }
+          ], 
+          "size": ""
+        }
+      ], 
+      "tools": [], 
+      "email": "support@cytron.com.my", 
+      "name": "cytron"
+    }
+  ]
+}
