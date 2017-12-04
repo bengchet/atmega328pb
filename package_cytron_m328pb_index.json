@@ -11,7 +11,7 @@
           "category": "Contributed", 
           "name": "Atmega328PB", 
           "url": "https://github.com/CytronTechnologies/atmega328pb-board-package/releases/download/1.0.0/atmega328pb-1.0.0.zip", 
-          "checksum": "SHA-256:0e81729f06eb4b9566e26a30e6ca36785be8b7234924af5b14372b22d141ec61", 
+          "checksum": "SHA-256:e17f34d851ea4f93fda677a9cd2036b5a1d477b5156f8dd2b971df83a2dbc915", 
           "help": {
             "online": "http://forum.cytron.io/"
           }, 
