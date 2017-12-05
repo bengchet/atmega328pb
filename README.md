@@ -6,7 +6,7 @@ Arduino Board package for atmega328pb
 
 ## Installation
 - Open Arduino IDE and paste the following link into **File** -> **Preferences** -> **Addtional Boards Manager URLs**.
-  `https://raw.githubusercontent.com/CytronTechnologies/atmega328pb-board-package/master/package_cytron_m328pb_index_stable.json`
+  `https://raw.githubusercontent.com/CytronTechnologies/atmega328pb-board-package/master/package_cytron_m328pb_index.json`
 - Select the board package from Board Manager and install.
 
 ## Credits
