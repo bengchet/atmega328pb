@@ -7,7 +7,11 @@ package_name=atmega328pb-$ver
 echo "Version: $ver"
 echo "Package name: $package_name"
 
-PKG_URL=https://github.com/CytronTechnologies/atmega328pb-board-package/releases/download/$ver/$package_name.zip
+if [ "$TRAVIS_REPO_SLUG" = "" ]; then
+TRAVIS_REPO_SLUG=CytronTechnologies/atmega328pb
+fi
+
+PKG_URL=https://github.com/$TRAVIS_REPO_SLUG/releases/download/$ver/$package_name.zip
 DOC_URL=http://forum.cytron.io/
 
 pushd ..
@@ -68,7 +72,7 @@ chmod 600 ~/.ssh/m328pb_deploy
 echo -e "Host $DEPLOY_HOST_NAME\n\tHostname github.com\n\tUser $DEPLOY_USER_NAME\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/m328pb_deploy" >> ~/.ssh/config
 
 #git clone the same repo git
-git clone $DEPLOY_USER_NAME@$DEPLOY_HOST_NAME:CytronTechnologies/atmega328pb-board-package.git ~/tmp
+git clone $DEPLOY_USER_NAME@$DEPLOY_HOST_NAME:$TRAVIS_REPO_SLUG.git ~/tmp
 
 cp $new_json ~/tmp/package_cytron_m328pb_index.json
 
